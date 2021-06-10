@@ -365,3 +365,8 @@ export default Header;
 Final update...don't be lazy, get some styling in there!
 
 Alright! If you hit any walls feel free to exapand for some code snippets above. We now have a two component application, hold onto your seats, next up is using an API call to grab data from a random user API to grab some user data to `fake` some friends! Onwards and upwards!
+
+
+
+
+shhhhhhhh full solution code for this lesson found here...https://github.com/CRHarding/caseybook-lab-part-3
