@@ -368,5 +368,7 @@ Alright! If you hit any walls feel free to exapand for some code snippets above.
 
 
 
-
-shhhhhhhh full solution code for this lesson found here...https://github.com/CRHarding/caseybook-lab-part-3
+<details>
+  <summary>Shhhhhhhhhhhh</summary>
+    Full solution code for this lesson found here...https://github.com/CRHarding/caseybook-lab-part-3
+</details>
