@@ -292,4 +292,76 @@ export default Footer;
 ````
 </details>
 
+If you finished the above early, might as well rock and roll! Create a new state key value pair called `headerInfo`, a new Component called `Header.js`, and get exporting, importing, and displaying some data! This is more freeform, you can take this in whatever direction you want. 
+
+
+<details>
+  <summary>If you want to see how I'd tackle it, click the triangle to the side...</summary>
+  
+App.js
+```javascript
+import React, { Component } from 'react';
+import './App.css';
+
+import Profile from './components/Profile';
+import Footer from './components/Footer';
+import Header from './components/Header';
+
+class App extends Component {
+  constructor() {
+    super();
+
+    this.state = {
+      profile: {
+        username: "CRHarding",
+        image: "http://images6.fanpop.com/image/photos/32800000/Thor-thor-32844898-1024-768.jpg",
+        about: "Lorem ipsum dolor sit amet..."
+      },
+      companyInfo: {
+        name: "CaseyBook",
+        creator: "Casey Harding",
+        social: {
+          facebook: "facebook.com",
+          twitter: "twitter.com",
+          instagram: "instagram.com"
+        }
+      },
+      headerInfo: {
+        cta: "The Only Social Media Site You'll Ever Need!",
+      }
+    }
+  }
+
+  render() {
+    return (
+      <div className="App">
+        <Header info={this.state.headerInfo} />
+        <Profile data={this.state.profile} />
+        <Footer info={this.state.companyInfo} />
+      </div>
+    );
+  }
+}
+
+export default App;
+```
+  
+Header.js:
+```javascript
+import React from 'react';
+
+const Header = (props) => {
+  return (
+    <div>
+      <p>{props.info.cta}</p>
+    </div>
+  )
+}
+
+export default Header;
+```
+</details>
+  
+Final update...don't be lazy, get some styling in there!
+
 Alright! If you hit any walls feel free to exapand for some code snippets above. We now have a two component application, hold onto your seats, next up is using an API call to grab data from a random user API to grab some user data to `fake` some friends! Onwards and upwards!
